@@ -145,7 +145,19 @@ ul, ol{
 	list-style: none;
 }
 
+.filter-list{
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.filter-list-item:not(:last-child){
+	margin-right: 8px;
+}
+
 .filter-button {
+	width: 121px;
+	min-height: 38px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.625;
@@ -161,6 +173,17 @@ ul, ol{
 .filter-button:hover {
 	background: var(--checked-color);
 	color: var(--checked-button-color);
+}
+
+.main-list{
+	display:flex;
+	flex-wrap:wrap;
+	margin-right: -30px;
+}
+
+.main-list-item{
+	margin-right:30px;
+	flex-basis:calc(100%/3 - 30px);
 }
 
 .main-list-title {
