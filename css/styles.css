@@ -22,7 +22,31 @@ body {
 	color: var(--main-color);
 }
 
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol{
+	margin: 0;
+	padding: 0;
+}
 /* ========COMPONENTS======= */
+.container{
+	width: 1200px;
+	padding: 0 15px;
+}
+
+.section{
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .logo {
 	font-family: var(--secondary-font);
 	font-weight: bold;
@@ -30,6 +54,7 @@ body {
 	line-height: 1.192;
 	letter-spacing: 0.03em;
 	text-decoration: none;
+	
 }
 
 .portfolio-logo {
@@ -52,6 +77,15 @@ body {
 /* ========HEADER======= */
 .header {
 	border: 1px solid var(--header-color);
+}
+
+.header .container{
+	display: flex;
+	align-items: center;
+}
+
+.header .logo{
+	margin-right: 94px
 }
 
 .navigation-list {
