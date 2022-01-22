@@ -23,27 +23,33 @@ body {
 	color: var(--main-color);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0;
 	padding: 0;
 }
 
-p{
+p {
 	margin: 0;
 	padding: 0;
 }
 
-ul, ol{
+ul,
+ol {
 	margin: 0;
 	padding: 0;
 }
 /* ========COMPONENTS======= */
-.container{
+.container {
 	width: 1200px;
 	padding: 0 15px;
 }
 
-.section{
+.section {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
@@ -55,7 +61,6 @@ ul, ol{
 	line-height: 1.192;
 	letter-spacing: 0.03em;
 	text-decoration: none;
-
 }
 
 .portfolio-logo {
@@ -76,27 +81,27 @@ ul, ol{
 /* ========COMPONENTS END======= */
 
 /* ========HEADER======= */
-.header .container{
+.header .container {
 	display: flex;
 	align-items: center;
 	border: 1px solid var(--header-color);
 	padding: 25px 15px;
 }
 
-.header .logo{
+.header .logo {
 	margin-right: 94px;
 }
 
-.navigation{
+.navigation {
 	margin-right: 371px;
 }
 
 .navigation-list {
 	list-style: none;
-	display : flex;
+	display: flex;
 }
 
-.navigation-list-item:not(:last-child){
+.navigation-list-item:not(:last-child) {
 	margin-right: 46px;
 }
 
@@ -118,7 +123,7 @@ ul, ol{
 
 .contact-list {
 	list-style: none;
-	display : flex;
+	display: flex;
 }
 
 .contact-list-link {
@@ -130,7 +135,7 @@ ul, ol{
 	text-decoration: none;
 }
 
-.contact-list-item:first-child{
+.contact-list-item:first-child {
 	margin-right: 50px;
 }
 
@@ -145,13 +150,13 @@ ul, ol{
 	list-style: none;
 }
 
-.filter-list{
+.filter-list {
 	margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
 }
 
-.filter-list-item:not(:last-child){
+.filter-list-item:not(:last-child) {
 	margin-right: 8px;
 }
 
@@ -175,15 +180,24 @@ ul, ol{
 	color: var(--checked-button-color);
 }
 
-.main-list{
-	display:flex;
-	flex-wrap:wrap;
-	margin-right: -30px;
+.main-list {
+	display: flex;
+	flex-wrap: wrap;
+	/* setting margin-right on -36px becouse i added border = 1px  */
+	margin-right: -36px;
+	margin-top: -36px; 
 }
 
-.main-list-item{
-	margin-right:30px;
-	flex-basis:calc(100%/3 - 30px);
+.main-list-item {
+	background: var(--card-color);
+	border: 1px solid #eeeeee;
+	margin-right: 30px;
+	margin-top: 30px;
+	flex-basis: calc(100% / 3 - 30px);
+}
+
+.main-list-item-text{
+	padding: 20px 24px;
 }
 
 .main-list-title {
@@ -202,7 +216,7 @@ ul, ol{
 /* ========MAIN END======= */
 
 /* ========HERO======= */
-.hero .container{
+.hero .container {
 	padding: 200px 252px;
 	background: var(--background-color);
 }
@@ -215,15 +229,15 @@ ul, ol{
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--hero-title-color);
-	width:696px;
-	min-height:120px;
-	margin-bottom:30px;
+	width: 696px;
+	min-height: 120px;
+	margin-bottom: 30px;
 }
 
 .hero-button {
-	display:block;
+	display: block;
 	margin: 0 auto;
-	padding:10px 41px;
+	padding: 10px 41px;
 	width: 200px;
 	min-height: 50px;
 	font-weight: bold;
@@ -242,13 +256,12 @@ ul, ol{
 /* ========OUR STRENGHT======= */
 .our-strength-list {
 	list-style: none;
-	display:flex;
+	display: flex;
 }
 
-.our-strength-list-item:not(:last-child){
+.our-strength-list-item:not(:last-child) {
 	margin-right: 30px;
 }
-
 
 .our-strength-list-item-title {
 	margin-bottom: 10px;
@@ -268,9 +281,9 @@ ul, ol{
 /* ========OUR STRENGHT END======= */
 
 /* ========WHAT WE DO======= */
-.what-we-do.section{
-	padding-top:0;
-	padding-bottom:94px;
+.what-we-do.section {
+	padding-top: 0;
+	padding-bottom: 94px;
 }
 
 .what-we-do-title {
@@ -288,19 +301,19 @@ ul, ol{
 	justify-content: space-between;
 }
 
-.what-we-do-list-item:not(:last-child){
-	margin-right:30px
+.what-we-do-list-item:not(:last-child) {
+	margin-right: 30px;
 }
 /* ========WHAT WE DO END======= */
 
 /* ========OUR TEAM======= */
 
-.our-team .container{
+.our-team .container {
 	background: var(--ourteam-background-color);
 }
 
 .our-team-title {
-	margin-bottom:50px;
+	margin-bottom: 50px;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 1.166;
@@ -310,22 +323,23 @@ ul, ol{
 
 .our-team-list {
 	list-style: none;
-	display : flex;
+	display: flex;
 }
 
-.our-team-list-item{
-	width:270px;
+.our-team-list-item {
+	width: 270px;
 	min-height: 368px;
 	background: var(--card-color);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list-item:not(:last-child){
+.our-team-list-item:not(:last-child) {
 	margin-right: 30px;
 }
 
-.our-team-list-img{
+.our-team-list-img {
 	margin-bottom: 30px;
 }
 
@@ -350,14 +364,14 @@ ul, ol{
 /* ========OUR TEAM END======= */
 
 /* ========FOOTER======= */
-.footer .container{
+.footer .container {
 	background-color: var(--background-color);
 	padding: 60px 15px;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 }
 
-.footer .logo{
+.footer .logo {
 	margin-bottom: 20px;
 }
 
@@ -365,7 +379,7 @@ ul, ol{
 	list-style: none;
 }
 
-.footer-list-item:not(:last-child){
+.footer-list-item:not(:last-child) {
 	margin-bottom: 9px;
 }
 
