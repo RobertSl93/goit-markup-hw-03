@@ -47,6 +47,7 @@ ol {
 .container {
 	width: 1200px;
 	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .section {
@@ -81,11 +82,16 @@ ol {
 /* ========COMPONENTS END======= */
 
 /* ========HEADER======= */
+.header{
+	border: 1px solid var(--header-color);
+	width:1600px;
+	margin: 0 auto;
+}
+
 .header .container {
 	display: flex;
 	align-items: center;
-	border: 1px solid var(--header-color);
-	padding: 25px 15px;
+	height: 80px;
 }
 
 .header .logo {
@@ -216,9 +222,14 @@ ol {
 /* ========MAIN END======= */
 
 /* ========HERO======= */
+.hero{
+	background: var(--background-color);
+	width:1600px;
+	margin: 0 auto;
+}
+
 .hero .container {
 	padding: 200px 252px;
-	background: var(--background-color);
 }
 
 .hero-title {
@@ -364,8 +375,13 @@ ol {
 /* ========OUR TEAM END======= */
 
 /* ========FOOTER======= */
-.footer .container {
+.footer{
 	background-color: var(--background-color);
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.footer .container {
 	padding: 60px 15px;
 	display: flex;
 	flex-direction: column;
