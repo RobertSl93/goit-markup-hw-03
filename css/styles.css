@@ -84,8 +84,6 @@ ol {
 /* ========HEADER======= */
 .header{
 	border: 1px solid var(--header-color);
-	width:1600px;
-	margin: 0 auto;
 }
 
 .header .container {
@@ -224,8 +222,6 @@ ol {
 /* ========HERO======= */
 .hero{
 	background: var(--background-color);
-	width:1600px;
-	margin: 0 auto;
 }
 
 .hero .container {
@@ -319,8 +315,8 @@ ol {
 
 /* ========OUR TEAM======= */
 
-.our-team .container {
-	background: var(--ourteam-background-color);
+.our-team {
+	background-color: var(--ourteam-background-color);
 }
 
 .our-team-title {
@@ -377,8 +373,6 @@ ol {
 /* ========FOOTER======= */
 .footer{
 	background-color: var(--background-color);
-	width: 1600px;
-	margin: 0 auto;
 }
 
 .footer .container {
